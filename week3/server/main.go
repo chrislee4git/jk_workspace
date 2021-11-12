@@ -39,7 +39,7 @@ func main() {
 			return fmt.Errorf("ctx Done, in go.Go1")
 		case <-ch:
 			shutdownch <- struct{}{}
-			return  fmt.Errorf("sig quit, in go.Go1")
+			return fmt.Errorf("sig quit, in go.Go1")
 		}
 	})
 
